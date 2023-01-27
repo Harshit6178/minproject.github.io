@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LearnDS</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="DS.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Mochiy+Pop+P+One&family=Montserrat&family=Sacramento&family=Ubuntu:ital@1&display=swap"
+        rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>           
+</head>
+
+<body>
+    <section id="title">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="">
+                    <img class="ico" src="favicon.ico" alt="Ico">
+                    LearnDS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="main.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="DS.html">Contents</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section id="contents">
+        <div class="container-fluid cont">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand cont1" href="">
+                    Contents |</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="DS.html">Data
+                                Structure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="Array.html">Arrays</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Linked Lists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stack.html">Stack</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Queue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Trees</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <br><br>
+    <!-- Body -->
+    <section id="body">
+        <div class="intro">
+            <h3><strong>1) What is Queue Data Structure?</strong></h3>
+            <ul>
+               <p class="in"><li>A Queue is defined as a linear data structure that is open at both ends and the operations are performed in First In First Out (FIFO) order.</li>
+               <br>
+               <li>A Queue is defined as a linear data structure that is open at both ends and the operations are performed in First In First Out (FIFO) order.</li>
+               </p>
+               </ul>
+            <br>
+            <hr>
+            <br>
+            <h3><strong>2) FIFO Principle of Queue:</strong></h3>
+            <ul>
+            <li>A Queue is like a line waiting to purchase tickets, where the first person in line is the first person served. (i.e. First come first serve).</li>
+                <br>
+                <li>Position of the entry in a queue ready to be served, that is, the first entry that will be removed from the queue, is called the front of the queue(sometimes, head of the queue), similarly, the position of the last entry in the queue, that is, the one most recently added, is called the rear (or the tail) of the queue. See the below figure.</li>
+                <br>
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <h3><strong>3) Complexity in Queue:</strong></h3>
+                <ul>
+                    <li><strong>Access : </strong>O(n)</li>
+                    <li><strong>Search : </strong>O(n)</li>
+                    <li><strong>Insertion : </strong>O(1)</li>
+                    <li><strong>Deletion : </strong>O(1)</li>
+               
+               </ul>
+            <br>
+            <hr>
+            <br>
+            <h3><strong>4) Types of Queues</strong></h3>
+            <ul>
+                <p class="in"><strong>There are four different types of queues:</strong></p>
+                  <ul>  
+                    <p class="in"><strong>
+                    1.Simple Queue<br>
+                    2.Circular Queue<br>
+                    3.Priority Queue<br>
+                    4.Double Ended Queue</strong></p>
+                 </ul>
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <h3><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simple Queue : </strong></h3>
+            
+                <ul>
+                <p class="in">In Linear Queue, an insertion takes place from one end while the deletion occurs from another end. The end at which the insertion takes place is known as the rear end, and the end at which the deletion takes place is known as front end. It strictly follows the FIFO rule.<br><br>
+                The major drawback of using a linear Queue is that insertion is done only from the rear end. If the first three elements are deleted from the Queue, we cannot insert more elements even though the space is available in a Linear Queue. In this case, the linear Queue shows the overflow condition as the rear is pointing to the last element of the Queue.
+                </p>
+               
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <h3><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Circular Queue : </strong></h3>
+            
+                <ul>
+                <p class="in">In Circular Queue, all the nodes are represented as circular. It is similar to the linear Queue except that the last element of the queue is connected to the first element. It is also known as Ring Buffer, as all the ends are connected to another end.<br><br>
+                The drawback that occurs in a linear queue is overcome by using the circular queue. If the empty space is available in a circular queue, the new element can be added in an empty space by simply incrementing the value of rear. The main advantage of using the circular queue is better memory utilization.    
+                </p>
+               
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <h3><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Priority Queue : </strong></h3>
+            
+                <ul>
+                <p class="in">It is a special type of queue in which the elements are arranged based on the priority. It is a special type of queue data structure in which every element has a priority associated with it. Suppose some elements occur with the same priority, they will be arranged according to the FIFO principle.<br><br>
+                Insertion in priority queue takes place based on the arrival, while deletion in the priority queue occurs based on the priority. Priority queue is mainly used to implement the CPU scheduling algorithms.    
+                </p>
+                <p class="in"><strong>There are two types of priority queue that are discussed as follows -</strong></p>
+                <ul>
+                    <li><strong> Ascending priority queue -</strong> In ascending priority queue, elements can be inserted in arbitrary order, but only smallest can be deleted first. Suppose an array with elements 7, 5, and 3 in the same order, so, insertion can be done with the same sequence, but the order of deleting the elements is 3, 5, 7.</li>
+                    <li><strong> Descending priority queue - </strong> In descending priority queue, elements can be inserted in arbitrary order, but only the largest element can be deleted first. Suppose an array with elements 7, 3, and 5 in the same order, so, insertion can be done with the same sequence, but the order of deleting the elements is 7, 5, 3.</li>
+                </ul>
+               
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <h3><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deque (or, Double Ended Queue) : </strong></h3>
+            
+                <ul>
+                <p class="in">In Deque or Double Ended Queue, insertion and deletion can be done from both ends of the queue either from the front or rear. It means that we can insert and delete elements from both front and rear ends of the queue. Deque can be used as a palindrome checker means that if we read the string from both ends, then the string would be the same.<br><br>
+                    Deque can be used both as stack and queue as it allows the insertion and deletion operations on both ends. Deque can be considered as stack because stack follows the LIFO (Last In First Out) principle in which insertion and deletion both can be performed only from one end. And in deque, it is possible to perform both insertion and deletion from one end, and Deque does not follow the FIFO principle.    
+                </p>
+                <p class="in"><strong>There are two types of deque that are discussed as follows -</strong></p>
+                <ul>
+                    <li><strong>Input restricted deque - </strong>  As the name implies, in input restricted queue, insertion operation can be performed at only one end, while deletion can be performed from both ends.</li>
+                    <li><strong> Output restricted deque - </strong>As the name implies, in output restricted queue, deletion operation can be performed at only one end, while insertion can be performed from both ends.</li>
+                </ul>
+                <br>
+                <hr>
+                <br>
+
+                <!--code implementation-->
+                <!--code implementation-->
+           <h3><strong>5) Code implementation fo all "Types Of Queues" :</strong></h3>
+           <ul>
+                 <li><strong>Implementation of Simple Queue using array</strong></li>
+                 <pre>
+                
+                        #include&lt;limits.h&gt;
+                        #include&lt;stdio.h&gt;
+                        #include&lt;stdlib.h&gt;
+                         
+                        // A structure to represent a queue
+                        struct Queue {
+                            int front, rear, size;
+                            unsigned capacity;
+                            int* array;
+                        };
+                         
+                        // function to create a queue
+                        // of given capacity.
+                        // It initializes size of queue as 0
+                        struct Queue* createQueue(unsigned capacity)
+                        {
+                            struct Queue* queue = (struct Queue*)malloc(
+                                sizeof(struct Queue));
+                            queue->capacity = capacity;
+                            queue->front = queue->size = 0;
+                         
+                            // This is important, see the enqueue
+                            queue->rear = capacity - 1;
+                            queue->array = (int*)malloc(
+                                queue->capacity * sizeof(int));
+                            return queue;
+                        }
+                         
+                        // Queue is full when size becomes
+                        // equal to the capacity
+                        int isFull(struct Queue* queue)
+                        {
+                            return (queue->size == queue->capacity);
+                        }
+                         
+                        // Queue is empty when size is 0
+                        int isEmpty(struct Queue* queue)
+                        {
+                            return (queue->size == 0);
+                        }
+                         
+                        // Function to add an item to the queue.
+                        // It changes rear and size
+                        void enqueue(struct Queue* queue, int item)
+                        {
+                            if (isFull(queue))
+                                return;
+                            queue->rear = (queue->rear + 1)
+                                          % queue->capacity;
+                            queue->array[queue->rear] = item;
+                            queue->size = queue->size + 1;
+                            printf("%d enqueued to queue\n", item);
+                        }
+                         
+                        // Function to remove an item from queue.
+                        // It changes front and size
+                        int dequeue(struct Queue* queue)
+                        {
+                            if (isEmpty(queue))
+                                return INT_MIN;
+                            int item = queue->array[queue->front];
+                            queue->front = (queue->front + 1)
+                                           % queue->capacity;
+                            queue->size = queue->size - 1;
+                            return item;
+                        }
+                         
+                        // Function to get front of queue
+                        int front(struct Queue* queue)
+                        {
+                            if (isEmpty(queue))
+                                return INT_MIN;
+                            return queue->array[queue->front];
+                        }
+                         
+                        // Function to get rear of queue
+                        int rear(struct Queue* queue)
+                        {
+                            if (isEmpty(queue))
+                                return INT_MIN;
+                            return queue->array[queue->rear];
+                        }
+                         
+                        // Driver program to test above functions./
+                        int main()
+                        {
+                            struct Queue* queue = createQueue(1000);
+                         
+                            enqueue(queue, 10);
+                            enqueue(queue, 20);
+                            enqueue(queue, 30);
+                            enqueue(queue, 40);
+                         
+                            printf("%d dequeued from queue\n\n",
+                                   dequeue(queue));
+                         
+                            printf("Front item is %d\n", front(queue));
+                            printf("Rear item is %d\n", rear(queue));
+                         
+                            return 0;
+                        }
+      
+                 </pre>
+                 <br>
+                 <hr>
+                 <br>
+                 <li><strong>Implementation of Simple Queue using Linked List</strong></li>
+                
+                 <pre>
+                
+                        #include&lt;stdio.h&gt;
+                        #include&lt;stdlib.h&gt;
+                         
+                        // A linked list (LL) node to store a queue entry
+                        struct QNode {
+                            int key;
+                            struct QNode* next;
+                        };
+                         
+                        // The queue, front stores the front node of LL and rear
+                        // stores the last node of LL
+                        struct Queue {
+                            struct QNode *front, *rear;
+                        };
+                         
+                        // A utility function to create a new linked list node.
+                        struct QNode* newNode(int k)
+                        {
+                            struct QNode* temp
+                                = (struct QNode*)malloc(sizeof(struct QNode));
+                            temp->key = k;
+                            temp->next = NULL;
+                            return temp;
+                        }
+                         
+                        // A utility function to create an empty queue
+                        struct Queue* createQueue()
+                        {
+                            struct Queue* q
+                                = (struct Queue*)malloc(sizeof(struct Queue));
+                            q->front = q->rear = NULL;
+                            return q;
+                        }
+                         
+                        // The function to add a key k to q
+                        void enQueue(struct Queue* q, int k)
+                        {
+                            // Create a new LL node
+                            struct QNode* temp = newNode(k);
+                         
+                            // If queue is empty, then new node is front and rear
+                            // both
+                            if (q->rear == NULL) {
+                                q->front = q->rear = temp;
+                                return;
+                            }
+                         
+                            // Add the new node at the end of queue and change rear
+                            q->rear->next = temp;
+                            q->rear = temp;
+                        }
+                         
+                        // Function to remove a key from given queue q
+                        void deQueue(struct Queue* q)
+                        {
+                            // If queue is empty, return NULL.
+                            if (q->front == NULL)
+                                return;
+                         
+                            // Store previous front and move front one node ahead
+                            struct QNode* temp = q->front;
+                         
+                            q->front = q->front->next;
+                         
+                            // If front becomes NULL, then change rear also as NULL
+                            if (q->front == NULL)
+                                q->rear = NULL;
+                         
+                            free(temp);
+                        }
+                         
+                        // Driver code
+                        int main()
+                        {
+                            struct Queue* q = createQueue();
+                            enQueue(q, 10);
+                            enQueue(q, 20);
+                            deQueue(q);
+                            deQueue(q);
+                            enQueue(q, 30);
+                            enQueue(q, 40);
+                            enQueue(q, 50);
+                            deQueue(q);
+                            printf("Queue Front : %d \n", ((q->front != NULL) ? (q->front)->key : -1));
+                            printf("Queue Rear : %d", ((q->rear != NULL) ? (q->rear)->key : -1));
+                            return 0;
+                        }
+      
+                 </pre>
+                
+                 <br>
+                 <hr>
+                 <br>
+                 <li><strong>Implementation of Priority Queue </strong></li>
+                 <pre >
+                    
+                        #include&lt;stdio.h&gt;
+                        int size = 0;
+                        void swap(int *a, int *b) {
+                          int temp = *b;
+                          *b = *a;
+                          *a = temp;
+                        }
+                        
+                        // Function to heapify the tree
+                        void heapify(int array[], int size, int i) {
+                          if (size == 1) {
+                            printf("Single element in the heap");
+                          } else {
+                            // Find the largest among root, left child and right child
+                            int largest = i;
+                            int l = 2 * i + 1;
+                            int r = 2 * i + 2;
+                            if (l < size && array[l] > array[largest])
+                              largest = l;
+                            if (r < size && array[r] > array[largest])
+                              largest = r;
+                        
+                            // Swap and continue heapifying if root is not largest
+                            if (largest != i) {
+                              swap(&array[i], &array[largest]);
+                              heapify(array, size, largest);
+                            }
+                          }
+                        }
+                        
+                        // Function to insert an element into the tree
+                        void insert(int array[], int newNum) {
+                          if (size == 0) {
+                            array[0] = newNum;
+                            size += 1;
+                          } else {
+                            array[size] = newNum;
+                            size += 1;
+                            for (int i = size / 2 - 1; i >= 0; i--) {
+                              heapify(array, size, i);
+                            }
+                          }
+                        }
+                        
+                        // Function to delete an element from the tree
+                        void deleteRoot(int array[], int num) {
+                          int i;
+                          for (i = 0; i < size; i++) {
+                            if (num == array[i])
+                              break;
+                          }
+                        
+                          swap(&array[i], &array[size - 1]);
+                          size -= 1;
+                          for (int i = size / 2 - 1; i >= 0; i--) {
+                            heapify(array, size, i);
+                          }
+                        }
+                        
+                        // Print the array
+                        void printArray(int array[], int size) {
+                          for (int i = 0; i < size; ++i)
+                            printf("%d ", array[i]);
+                          printf("\n");
+                        }
+                        
+                        // Driver code
+                        int main() {
+                          int array[10];
+                        
+                          insert(array, 3);
+                          insert(array, 4);
+                          insert(array, 9);
+                          insert(array, 5);
+                          insert(array, 2);
+                        
+                          printf("Max-Heap array: ");
+                          printArray(array, size);
+                        
+                          deleteRoot(array, 4);
+                        
+                          printf("After deleting an element: ");
+                        
+                          printArray(array, size);
+                        }
+                    
+      
+                 </pre>
+                 <br>
+                 <hr>
+                 <br>
+                 <li><strong>Implementation of Circular Queue </strong></li>
+                
+                 <pre>
+                
+                        #include&lt;stdio.h&gt;
+                        #include&lt;conio.h&gt;
+                        #include&lt;stdlib.h&gt;
+                        #define size 5
+                        
+                        int main()
+                        {
+                            int arr[size],R=-1,F=0,te=0,ch,n,i,x;
+                        
+                            for(;;)		// An infinite loop
+                            {
+                                system("cls");		// for clearing the screen
+                                printf("1. Add\n");
+                                printf("2. Delete\n");
+                                printf("3. Display\n");
+                                printf("4. Exit\n");
+                                printf("Enter Choice: ");
+                                scanf("%d",&ch);
+                        
+                                switch(ch)
+                                {
+                                    case 1:
+                                        if(te==size)
+                                        {
+                                            printf("Queue is full");
+                                            getch();	// pause the loop to see the message
+                                        }
+                                        else
+                                        {
+                                            printf("Enter a number ");
+                                            scanf("%d",&n);
+                                            R=(R+1)%size;
+                                            arr[R]=n;
+                                            te=te+1;
+                                        }
+                                        break;
+                        
+                                    case 2:
+                                        if(te==0)
+                                        {
+                                            printf("Queue is empty");
+                                            getch();	// pause the loop to see the message
+                                        }
+                                        else
+                                        {
+                                            printf("Number Deleted = %d",arr[F]);
+                                            F=(F+1)%size;
+                                            te=te-1;
+                                            getch();	// pause the loop to see the number
+                                        }
+                                        break;
+                        
+                                    case 3:
+                                        if(te==0)
+                                        {
+                                            printf("Queue is empty");
+                                            getch();	// pause the loop to see the message
+                                        }
+                                        else
+                                        {
+                                            x=F;
+                                            for(i=1; i<=te; i++)
+                                            {
+                                                printf("%d ",arr[x]);
+                                                x=(x+1)%size;
+                                            }
+                                            getch();	// pause the loop to see the numbers
+                                        }
+                                        break;
+                        
+                                    case 4:
+                                        exit(0);
+                                        break;
+                        
+                                    default:
+                                        printf("Wrong Choice");
+                                        getch();	// pause the loop to see the message
+                                }
+                            }
+                            return 0;
+                        }
+      
+                 </pre>
+                 <br>
+                 <hr>
+                 <br>
+                 <li><strong>Implementation of Dequeue</strong></li>
+                
+                 <pre>
+                
+                        #include&lt;stdio.h&gt;
+
+                        #define MAX 10
+                        
+                        void addFront(int *, int, int *, int *);
+                        void addRear(int *, int, int *, int *);
+                        int delFront(int *, int *, int *);
+                        int delRear(int *, int *, int *);
+                        void display(int *);
+                        int count(int *);
+                        
+                        int main() {
+                          int arr[MAX];
+                          int front, rear, i, n;
+                        
+                          front = rear = -1;
+                          for (i = 0; i < MAX; i++)
+                            arr[i] = 0;
+                        
+                          addRear(arr, 5, &front, &rear);
+                          addFront(arr, 12, &front, &rear);
+                          addRear(arr, 11, &front, &rear);
+                          addFront(arr, 5, &front, &rear);
+                          addRear(arr, 6, &front, &rear);
+                          addFront(arr, 8, &front, &rear);
+                        
+                          printf("\nElements in a deque: ");
+                          display(arr);
+                        
+                          i = delFront(arr, &front, &rear);
+                          printf("\nremoved item: %d", i);
+                        
+                          printf("\nElements in a deque after deletion: ");
+                          display(arr);
+                        
+                          addRear(arr, 16, &front, &rear);
+                          addRear(arr, 7, &front, &rear);
+                        
+                          printf("\nElements in a deque after addition: ");
+                          display(arr);
+                        
+                          i = delRear(arr, &front, &rear);
+                          printf("\nremoved item: %d", i);
+                        
+                          printf("\nElements in a deque after deletion: ");
+                          display(arr);
+                        
+                          n = count(arr);
+                          printf("\nTotal number of elements in deque: %d", n);
+                        }
+                        
+                        void addFront(int *arr, int item, int *pfront, int *prear) {
+                          int i, k, c;
+                        
+                          if (*pfront == 0 && *prear == MAX - 1) {
+                            printf("\nDeque is full.\n");
+                            return;
+                          }
+                        
+                          if (*pfront == -1) {
+                            *pfront = *prear = 0;
+                            arr[*pfront] = item;
+                            return;
+                          }
+                        
+                          if (*prear != MAX - 1) {
+                            c = count(arr);
+                            k = *prear + 1;
+                            for (i = 1; i <= c; i++) {
+                              arr[k] = arr[k - 1];
+                              k--;
+                            }
+                            arr[k] = item;
+                            *pfront = k;
+                            (*prear)++;
+                          } else {
+                            (*pfront)--;
+                            arr[*pfront] = item;
+                          }
+                        }
+                        
+                        void addRear(int *arr, int item, int *pfront, int *prear) {
+                          int i, k;
+                        
+                          if (*pfront == 0 && *prear == MAX - 1) {
+                            printf("\nDeque is full.\n");
+                            return;
+                          }
+                        
+                          if (*pfront == -1) {
+                            *prear = *pfront = 0;
+                            arr[*prear] = item;
+                            return;
+                          }
+                        
+                          if (*prear == MAX - 1) {
+                            k = *pfront - 1;
+                            for (i = *pfront - 1; i < *prear; i++) {
+                              k = i;
+                              if (k == MAX - 1)
+                                arr[k] = 0;
+                              else
+                                arr[k] = arr[i + 1];
+                            }
+                            (*prear)--;
+                            (*pfront)--;
+                          }
+                          (*prear)++;
+                          arr[*prear] = item;
+                        }
+                        
+                        int delFront(int *arr, int *pfront, int *prear) {
+                          int item;
+                        
+                          if (*pfront == -1) {
+                            printf("\nDeque is empty.\n");
+                            return 0;
+                          }
+                        
+                          item = arr[*pfront];
+                          arr[*pfront] = 0;
+                        
+                          if (*pfront == *prear)
+                            *pfront = *prear = -1;
+                          else
+                            (*pfront)++;
+                        
+                          return item;
+                        }
+                        
+                        int delRear(int *arr, int *pfront, int *prear) {
+                          int item;
+                        
+                          if (*pfront == -1) {
+                            printf("\nDeque is empty.\n");
+                            return 0;
+                          }
+                        
+                          item = arr[*prear];
+                          arr[*prear] = 0;
+                          (*prear)--;
+                          if (*prear == -1)
+                            *pfront = -1;
+                          return item;
+                        }
+                        
+                        void display(int *arr) {
+                          int i;
+                        
+                          printf("\n front:  ");
+                          for (i = 0; i < MAX; i++)
+                            printf("  %d", arr[i]);
+                          printf("  :rear");
+                        }
+                        
+                        int count(int *arr) {
+                          int c = 0, i;
+                        
+                          for (i = 0; i < MAX; i++) {
+                            if (arr[i] != 0)
+                              c++;
+                          }
+                          return c;
+                        }
+      
+                 </pre>
+                 
+
+               </ul>
+               
+            </ul>
+            
+           
+        </div>
+    </section>
+    <br><br><br>
+    <section id="lastitems">
+        <div class="container-fluid cont last">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand cont1" href="">
+                    Read Also |</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="DS.html">Data
+                                Structure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="Array.html">Arrays</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Linked Lists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stack.html">Stack</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Queue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Trees</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+</body>
+
+</html>

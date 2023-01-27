@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LearnDS</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="DS.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Mochiy+Pop+P+One&family=Montserrat&family=Sacramento&family=Ubuntu:ital@1&display=swap"
+        rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>       
+</head>
+
+<body>
+    <section id="title">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="">
+                    <img class="ico" src="favicon.ico" alt="Ico">
+                    LearnDS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="main.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="DS.html">Contents</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section id="contents">
+        <div class="container-fluid cont">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand cont1" href="">
+                    Contents |</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="DS.html">Data
+                                Structure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="Array.html">Arrays</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Linked Lists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stack.html">Stack</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Queue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Trees</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <br><br>
+    <!-- Body -->
+    <section id="body">
+        <div class="intro">
+            <h3><strong>1) What is Stack?</strong></h3>
+            <p class="in">Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be<strong>LIFO(Last In First Out)</strong>or
+                <strong>FILO(First In Last Out).</strong>.
+
+                There are many real-life examples of a stack. Consider an example of plates stacked over one another in the canteen. The plate which is at the top is the first one to be removed, i.e. the plate which has been placed at the bottommost position remains in the stack for the longest period of time. So, it can be simply seen to follow LIFO(Last In First Out)/FILO(First In Last Out) order.
+            </p>
+
+            <strong>&nbsp;&nbsp;&nbsp;Some key points related to stack</strong>
+            <ul>
+                <li><p class="in">It is called as stack because it behaves like a real-world stack, piles of books, etc.</p></li>
+                <li><p class="in">A Stack is an abstract data type with a pre-defined capacity, which means that it can store the elements of a limited size.</p></li>
+                <li><p class="in">It is a data structure that follows some order to insert and delete the elements, and that order can be LIFO or FILO.</p>  </li> 
+            </ul>
+            
+            <br>
+            <hr>
+            <br>
+            <h3><strong>2) Basic Operations on Stack</strong></h3>
+            <p class="in">In order to make manipulations in a stack, there are certain operations provided to us:</p>
+            <ol>
+                <li><strong>push()</strong>to insert an element into the stackPassing no value within the initializer: </li>
+                <br>
+                <li><strong>pop()</strong>to remove an element from the stack </li>
+                <br>
+                <li><strong>top()</strong>Returns the top element of the stack. </li>
+                <br>
+                <li><strong>isEmpty()</strong> returns true if stack is empty else false.</li>
+                <br>
+                <li><strong>size()</strong>returns the size of stack</li>
+                <br>
+            </ol>
+            <br>
+            <hr>
+            <br>
+            <h3><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Push:</strong></h3>
+            
+                <ul>
+                <p class="in">Adds an item to the stack. If the stack is full, then it is said to be an<strong>Overflow condition.</strong></p>
+                <p class="in"><strong>Algorithm for push:</strong>
+                    <br>
+                    <pre>
+                    begin
+                    if stack is full  
+                        return  
+                    endif  
+                    else  
+                    increment top  
+                    stack[top] assign value  
+                    end else  
+                    end procedure  
+                    </pre>   
+                </p>
+               
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <h3><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pop:</strong></h3>
+            
+                <ul>
+                <p class="in">Removes an item from the stack. The items are popped in the reversed order in which they are pushed. If the stack is empty, then it is said to be an <strong>Underflow condition.</strong></p>
+                <p class="in"><strong>Algorithm for pop:
+
+                </strong>
+                    <br>
+                    <pre>
+                     begin
+                      if stack is empty
+                         return
+                        endif
+                     else
+                        store value of stack[top]
+                        decrement top
+                        return value
+                     end else
+                     end procedure
+                    </pre>   
+                </p>
+               
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <h3><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top:</strong></h3>
+            
+                <ul>
+                <p class="in">Returns the top element of the stack.</p>
+                <p class="in"><strong>Algorithm for Top:
+
+                </strong>
+                    <br>
+                    <pre>
+                      begin 
+                        return stack[top]
+                      end procedure
+                    </pre>   
+                </p>
+               
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <h3><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;isEmpty:</strong></h3>
+            
+                <ul>
+                <p class="in">Returns true if the stack is empty, else false.</p>
+                <p class="in"><strong>Algorithm for isEmpty:
+
+                </strong>
+                    <br>
+                    <pre>
+                     begin
+                        if top < 1
+                           return true
+                        else
+                           return false
+                     end procedure
+                    </pre>   
+                </p>
+               
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <h3><strong>3) Code implementation for Stack :</strong></h3>
+            <ul>
+                 <li><strong>Implementation of Stack using array</strong></li>
+                 <pre>
+                
+                        #include&lt;stdio.h&gt;   
+                        int stack[100],i,j,choice=0,n,top=-1;  
+                        void push();  
+                        void pop();  
+                        void show();  
+                        void main ()  
+                        {  
+                              
+                            printf("Enter the number of elements in the stack ");   
+                            scanf("%d",&n);  
+                            printf("*********Stack operations using array*********");  
+                          
+                        printf("\n----------------------------------------------\n");  
+                            while(choice != 4)  
+                            {  
+                                printf("Chose one from the below options...\n");  
+                                printf("\n1.Push\n2.Pop\n3.Show\n4.Exit");  
+                                printf("\n Enter your choice \n");        
+                                scanf("%d",&choice);  
+                                switch(choice)  
+                                {  
+                                    case 1:  
+                                    {   
+                                        push();  
+                                        break;  
+                                    }  
+                                    case 2:  
+                                    {  
+                                        pop();  
+                                        break;  
+                                    }  
+                                    case 3:  
+                                    {  
+                                        show();  
+                                        break;  
+                                    }  
+                                    case 4:   
+                                    {  
+                                        printf("Exiting....");  
+                                        break;   
+                                    }  
+                                    default:  
+                                    {  
+                                        printf("Please Enter valid choice ");  
+                                    }   
+                                };  
+                            }  
+                        }   
+                          
+                        void push ()  
+                        {  
+                            int val;      
+                            if (top == n )   
+                            printf("\n Overflow");   
+                            else   
+                            {  
+                                printf("Enter the value?");  
+                                scanf("%d",&val);         
+                                top = top +1;   
+                                stack[top] = val;   
+                            }   
+                        }   
+                          
+                        void pop ()   
+                        {   
+                            if(top == -1)   
+                            printf("Underflow");  
+                            else  
+                            top = top -1;   
+                        }   
+                        void show()  
+                        {  
+                            for (i=top;i>=0;i--)  
+                            {  
+                                printf("%d\n",stack[i]);  
+                            }  
+                            if(top == -1)   
+                            {  
+                                printf("Stack is empty");  
+                            }  
+                        }  
+      
+                 </pre>
+                 <br>
+                 <hr>
+                 <br>
+                 <li><strong>Implementation of Stack using Linked List</strong></li>
+                
+                 <pre>
+                
+                        #include&lt;stdio.h&gt;  
+                        #include&lt;stdlib.h&gt;
+                        void push();  
+                        void pop();  
+                        void display();  
+                        struct node   
+                        {  
+                        int val;  
+                        struct node *next;  
+                        };  
+                        struct node *head;  
+                          
+                        void main ()  
+                        {  
+                            int choice=0;     
+                            printf("\n*********Stack operations using linked list*********\n");  
+                            printf("\n----------------------------------------------\n");  
+                            while(choice != 4)  
+                            {  
+                                printf("\n\nChose one from the below options...\n");  
+                                printf("\n1.Push\n2.Pop\n3.Show\n4.Exit");  
+                                printf("\n Enter your choice \n");        
+                                scanf("%d",&choice);  
+                                switch(choice)  
+                                {  
+                                    case 1:  
+                                    {   
+                                        push();  
+                                        break;  
+                                    }  
+                                    case 2:  
+                                    {  
+                                        pop();  
+                                        break;  
+                                    }  
+                                    case 3:  
+                                    {  
+                                        display();  
+                                        break;  
+                                    }  
+                                    case 4:   
+                                    {  
+                                        printf("Exiting....");  
+                                        break;   
+                                    }  
+                                    default:  
+                                    {  
+                                        printf("Please Enter valid choice ");  
+                                    }   
+                            };  
+                        }  
+                        }  
+                        void push ()  
+                        {  
+                            int val;  
+                            struct node *ptr = (struct node*)malloc(sizeof(struct node));   
+                            if(ptr == NULL)  
+                            {  
+                                printf("not able to push the element");   
+                            }  
+                            else   
+                            {  
+                                printf("Enter the value");  
+                                scanf("%d",&val);  
+                                if(head==NULL)  
+                                {         
+                                    ptr->val = val;  
+                                    ptr -> next = NULL;  
+                                    head=ptr;  
+                                }   
+                                else   
+                                {  
+                                    ptr->val = val;  
+                                    ptr->next = head;  
+                                    head=ptr;  
+                                       
+                                }  
+                                printf("Item pushed");  
+                                  
+                            }  
+                        }  
+                          
+                        void pop()  
+                        {  
+                            int item;  
+                            struct node *ptr;  
+                            if (head == NULL)  
+                            {  
+                                printf("Underflow");  
+                            }  
+                            else  
+                            {  
+                                item = head->val;  
+                                ptr = head;  
+                                head = head->next;  
+                                free(ptr);  
+                                printf("Item popped");  
+                                  
+                            }  
+                        }  
+                        void display()  
+                        {  
+                            int i;  
+                            struct node *ptr;  
+                            ptr=head;  
+                            if(ptr == NULL)  
+                            {  
+                                printf("Stack is empty\n");  
+                            }  
+                            else  
+                            {  
+                                printf("Printing Stack elements \n");  
+                                while(ptr!=NULL)  
+                                {  
+                                    printf("%d\n",ptr->val);  
+                                    ptr = ptr->next;  
+                                }  
+                            }  
+                        }  
+      
+                 </pre>
+           
+        </div>
+    </section>
+    <br><br><br>
+    <section id="lastitems">
+        <div class="container-fluid cont last">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand cont1" href="">
+                    Read Also |</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="DS.html">Data
+                                Structure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="Array.html">Arrays</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Linked Lists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stack.html">Stack</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Queue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Trees</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+</body>
+
+</html>

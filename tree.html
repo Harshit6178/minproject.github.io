@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LearnDS</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="DS.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Mochiy+Pop+P+One&family=Montserrat&family=Sacramento&family=Ubuntu:ital@1&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>   
+</head>
+
+<body>
+    <section id="title">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="">
+                    <img class="ico" src="favicon.ico" alt="Ico">
+                    LearnDS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="main.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="DS.html">Contents</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section id="contents">
+        <div class="container-fluid cont">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand cont1" href="">
+                    Contents |</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="DS.html">Data
+                                Structure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="Array.html">Arrays</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Linked Lists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stack.html">Stack</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Queue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Trees</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <br><br>
+    <!-- Body -->
+    <section id="body">
+        <div class="intro">
+            <h3><strong>1) What is a Tree data structure?</strong></h3>
+            <ul>
+                <li><p class="in">A Tree is a <strong>non-linear data structure</strong> and a hierarchy consisting of a collection of nodes such that each node of the tree stores a value and a list of references to other nodes (the “children”).</p></li>
+                <li><p class="in">This data structure is a specialized method to organize and store data in the computer to be used more effectively. It consists of a central node, structural nodes, and sub-nodes, which are connected via edges. We can also say that tree data structure has roots, branches, and leaves connected with one another. </p> </li> 
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <h3><strong>2) Why Tree Data Structure?</strong></h3>
+            <ul>
+                <p class="in">Other data structures such as arrays, linked list, stack, and queue are linear data structures that store data sequentially. In order to perform any operation in a linear data structure, the time complexity increases with the increase in the data size. But, it is not acceptable in today's computational world.<br><br>
+                Different tree data structures allow quicker and easier access to the data as it is a non-linear data structure.
+                </p>
+            </ul>            
+            <br>
+            <hr>
+            <br>
+         
+            <h3><strong>3) Basic Terminologies In Tree Data Structure:</strong></h3>
+            
+            <ul>
+                
+                <li><strong>Parent Node:</strong>The node which is a predecessor of a node is called the parent node of that node. {B} is the parent node of {D, E}.</li><br>
+               <li><strong>Child Node:</strong>The node which is the immediate successor of a node is called the child node of that node. Examples: {D, E} are the child nodes of {B}.</li><br>
+               <li><strong>Root Node:</strong> The topmost node of a tree or the node which does not have any parent node is called the root node. {A} is the root node of the tree. A non-empty tree must contain exactly one root node and exactly one path from the root to all other nodes of the tree.</li><br>
+               <li><strong>Leaf Node or External Node: </strong>The nodes which do not have any child nodes are called leaf nodes. {K, L, M, N, O, P} are the leaf nodes of the tree.
+               </li><br>
+               <li><strong>Ancestor of a Node:</strong>Any predecessor nodes on the path of the root to that node are called Ancestors of that node. {A,B} are the ancestor nodes of the node {E}</li><br>
+               <li><strong>Descendant:</strong>Any successor node on the path from the leaf node to that node. {E,I} are the descendants of the node {B}.</li><br>
+               <li><strong>Sibling:</strong>Children of the same parent node are called siblings. {D,E} are called siblings.</li><br>
+               <li><strong>Level of a node: </strong> The count of edges on the path from the root node to that node. The root node has level 0.</li><br>
+               <li><strong>Internal node: </strong>A node with at least one child is called Internal Node.</li><br>
+               <li><strong>Neighbour of a Node:</strong>Parent or child nodes of that node are called neighbors of that node.</li><br>
+               <li><strong>Subtree: </strong>Any node of the tree along with its descendant.</li><br>
+
+                
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <h3><strong>4) Properties of a Tree:</strong></h3>
+            
+            <ul>
+                
+                <li><strong>Number of edges:</strong> An edge can be defined as the connection between two nodes. If a tree has N nodes then it will have (N-1) edges. There is only one path from each node to any other node of the tree.</li><br>
+
+               <li><strong>Depth of a node:</strong> The depth of a node is defined as the length of the path from the root to that node. Each edge adds 1 unit of length to the path. So, it can also be defined as the number of edges in the path from the root of the tree to the node.</li><br>
+
+               <li><strong>Height of a node: </strong> The height of a node can be defined as the length of the longest path from the node to a leaf node of the tree.</li><br>
+
+               <li><strong>Height of the Tree:</strong>The height of a tree is the length of the longest path from the root of the tree to a leaf node of the tree.
+               </li><br>
+
+               <li><strong>Degree of a Node: </strong> The total count of subtrees attached to that node is called the degree of the node. The degree of a leaf node must be 0. The degree of a tree is the maximum degree of a node among all the nodes in the tree.</li><br>           
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <h3><strong>5) Types of Tree data structures:</strong></h3>
+            
+          
+                
+                <ul>
+                    
+                      <ul>  
+                        <p class="in"><strong>1. General : </strong><br>A general tree data structure has no restriction on the number of nodes. It means that a parent node can have any number of child nodes.  </p>
+                        <p class="in"><strong>2. Binary tree : </strong><br>A node of a binary tree can have a maximum of two child nodes. In the given tree diagram, node B, D, and F are left children, while E, C, and G are the right children. </p>
+                        <p class="in"><strong>3. Balanced tree : </strong><br>If the height of the left sub-tree and the right sub-tree is equal or differs at most by 1, the tree is known as a balanced tree.  </p>
+                        <p class="in"><strong>4. Binary search tree : </strong><br>As the name implies, binary search trees are used for various searching and sorting algorithms. The examples include AVL tree and red-black tree. It is a non-linear data structure. It shows that the value of the left node is less than its parent, while the value of the right node is greater than its parent.</p>
+                     </ul>
+                </ul>
+                <br>
+            <hr>
+            <br>
+            <h3><strong>6) Applications of Tree data structure : </strong></h3>
+            
+          
+                
+               
+
+                      <ol>  
+                        <li><p class="in"><strong> Spanning tree : </strong><br>It is the shortest path tree used in the routers to direct the packets to the destination.</p></li>
+                        <li><p class="in"><strong> Binary Search Tree : </strong><br> It is a type of tree data structure that helps in maintaining a sorted stream of data.<br>  
+                        <ol> 
+                            <li>Full Binary tree</li>
+                            <li>Complete Binary tree</li>
+                            <li>Skewed Binary tree</li>
+                            <li> Strictly Binary tree</li>
+                            <li>Extended Binary tree In the given tree diagram, node B, D, and F are left children, while E, C, and G are the right children.</li>
+                        </ol>
+                        </p></li>
+                        <li><p class="in"><strong>Balanced tree : </strong><br>If the height of the left sub-tree and the right sub-tree is equal or differs at most by 1, the tree is known as a balanced tree.  </p></li>
+                        <li><p class="in"><strong>Binary search tree : </strong><br>As the name implies, binary search trees are used for various searching and sorting algorithms. The examples include AVL tree and red-black tree. It is a non-linear data structure. It shows that the value of the left node is less than its parent, while the value of the right node is greater than its parent.</p></li>
+                     </ol>
+                            
+            
+
+
+
+           <!--code implementation-->
+
+           
+           
+        </div>
+    </section>
+    <br><br><br>
+    <section id="lastitems">
+        <div class="container-fluid cont last">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand cont1" href="">
+                    Read Also |</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="DS.html">Data
+                                Structure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="Array.html">Arrays</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Linked Lists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stack.html">Stack</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Queue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Trees</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+</body>
+
+</html>

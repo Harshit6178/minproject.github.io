@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LearnDS</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="DS.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Mochiy+Pop+P+One&family=Montserrat&family=Sacramento&family=Ubuntu:ital@1&display=swap"
+        rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>       
+</head>
+
+<body>
+    <section id="title">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="">
+                    <img class="ico" src="favicon.ico" alt="Ico">
+                    LearnDS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="main.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="DS.html">Contents</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section id="contents">
+        <div class="container-fluid cont">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand cont1" href="">
+                    Contents |</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="DS.html">Data
+                                Structure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="Array.html">Arrays</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Linked Lists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stack.html">Stack</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Queue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Trees</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <br><br>
+    <!-- Body -->
+    <section id="body">
+        <div class="intro">
+            <h3><strong>1) What is Linked List?</strong></h3>
+            <ul>
+                <li><p class="in">Linked List can be defined as collection of objects called <strong>nodes</strong> that are randomly stored in the memory.</p></li>
+                <li><p class="in">A node contains two fields i.e. data stored at that particular address and the pointer which contains the address of the next node in the memory.</p></li>
+                <li><p class="in">The last node of the list contains pointer to the null.</p> </li> 
+            </ul>
+            
+            <br>
+            <hr>
+            <br>
+            <h3><strong>2) Uses of Linked List</strong></h3>
+            <ul>
+                <li><p class="in">The list is not required to be contiguously present in the memory. The node can reside any where in the memory and linked together to make a list. This achieves optimized utilization of space.</p></li>
+                <li><p class="in">Empty node can not be present in the linked list.</p></li>
+                <li><p class="in">list size is limited to the memory size and doesn't need to be declared in advance.</p> </li> 
+                <li><p class="in">We can store values of primitive types or objects in the singly linked list.</p> </li> 
+            </ul>
+            
+            <br>
+            <hr>
+            <br>
+         
+            <h3><strong>3) Why use linked list over array?</strong></h3>
+            
+            <ul>
+                <p class="in">Till now, we were using array data structure to organize the group of elements that are to be stored individually in the memory. However, Array has several advantages and disadvantages which must be known in order to decide the data structure which will be used throughout the program.</strong></p>
+                <p class="in"><strong>Array contains following limitations:</strong>
+                </p>
+                <ul>
+                <li><p class="in">The size of array must be known in advance before using it in the program.</p> </li>
+                <li><p class="in">Increasing size of the array is a time taking process. It is almost impossible to expand the size of the array at run time.
+                </p></li>
+                <li> <p class="in">All the elements in the array need to be contiguously stored in the memory. Inserting any element in the array needs shifting of all its predecessors.</p> </li>
+                </ul>
+            </ul>
+            <br>
+            <ul>    
+                <p class="in"><strong>Linked list is the data structure which can overcome all the limitations of an array. Using linked list is useful because,</strong>
+                </p>
+                <ul>
+                <li><p class="in">It allocates the memory dynamically. All the nodes of linked list are non-contiguously stored in the memory and linked together with the help of pointers.</p> </li>
+                <li><p class="in">Sizing is no longer a problem since we do not need to define its size at the time of declaration. List grows as per the program's demand and limited to the available memory space.
+                </p></li>
+            </ul>
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <h3><strong>4) Types Of Linked List:</strong></h3>
+            
+                <ul>
+                <p class="in"><strong><u>1. Singly Linked List</u></strong></p>
+                <p class="in">It is the simplest type of linked list in which every node contains some data and a pointer to the next node of the same data type. <br>
+                    The node contains a pointer to the next node means that the node stores the address of the next node in the sequence. A single linked list allows the traversal of data only in one way.
+                </p>
+                <p class="in"><strong><u>2. Doubly Linked List</u></strong></p>
+                <p class="in">A doubly linked list or a two-way linked list is a more complex type of linked list that contains a pointer to the next as well as the previous node in sequence. <br><br>
+                    A Doubly Linked List (DLL) contains an extra pointer, typically called the previous pointer, together with the next pointer and data which are there in the singly linked list.
+                </p>
+                <p class="in"><strong><u>3. Circular Linked List</u></strong></p>
+                <p class="in">A circular linked list is that in which the last node contains the pointer to the first node of the list.  
+                    <br>
+                    The circular linked list is a linked list where all nodes are connected to form a circle. In a circular linked list, the first node and the last node are connected to each other which forms a circle. There is no NULL at the end.  
+                    <br><br>
+                    While traversing a circular linked list, we can begin at any node and traverse the list in any direction forward and backward until we reach the same node we started. Thus, a circular linked list has no beginning and no end.
+                </p>
+               
+            </ul>
+
+
+
+           <!--code implementation-->
+           <h3><strong>5) Code implementation fo all "Types Of Linked List" :</strong></h3>
+               <ul>
+                     <li><strong>Implementation of Singly Linked List</strong></li>
+                     <pre>
+                    
+                            #include&lt;stdlib&gt;
+                            #include&lt;stdio.&gt;
+                            struct Node{
+                                int data;
+                                struct Node *next;
+                            };
+                            void deleteStart(struct Node** head){
+                                struct Node* temp = *head;
+                              
+                                // If head is NULL it means Singly Linked List is empty
+                                if(*head == NULL){
+                                    printf("Impossible to delete from empty Singly Linked List");
+                                    return;
+                                }
+                                
+                                // move head to next node
+                                *head = (*head)->next;
+                                printf("Deleted: %d\n", temp->data);
+                                free(temp);
+                            }
+                            void insertStart(struct Node** head, int data){
+                                
+                                // dynamically create memory for this newNode
+                                struct Node* newNode = (struct Node*) malloc(sizeof(struct Node));
+                                
+                                // assign data value
+                                newNode->data = data;
+                                // change the next node of this newNode 
+                                // to current head of Linked List
+                                newNode->next = *head;
+                                //re-assign head to this newNode
+                                *head = newNode;
+                                printf("Inserted %d\n",newNode->data);
+                            }
+                            void display(struct Node* node){
+                                printf("\nLinked List: ");
+                                // as linked list will end when Node is Null
+                                while(node!=NULL){
+                                    printf("%d ",node->data);
+                                    node = node->next;
+                                }
+                                printf("\n");
+                            }
+                            int main()
+                            {
+                                struct Node* head = NULL;
+                                insertStart(&head,100);
+                                insertStart(&head,80);
+                                insertStart(&head,60);
+                                insertStart(&head,40);
+                                insertStart(&head,20);
+                                
+                                display(head);
+                                
+                                deleteStart(&head);
+                                deleteStart(&head);
+                                display(head);
+                                
+                                return 0; 
+                            }
+          
+                     </pre>
+                     <br>
+                     <hr>
+                     <br>
+                     <li><strong>Implementation of Doubly Linked List</strong></li>
+                    
+                     <pre>
+                    
+                            #include&lt;stdio.h&gt;
+                            #include&lt;stdlib.h&gt;
+                            
+                            // node creation
+                            struct Node {
+                              int data;
+                              struct Node* next;
+                              struct Node* prev;
+                            };
+                            
+                            // insert node at the front
+                            void insertFront(struct Node** head, int data) {
+                              // allocate memory for newNode
+                              struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+                            
+                              // assign data to newNode
+                              newNode->data = data;
+                            
+                              // make newNode as a head
+                              newNode->next = (*head);
+                            
+                              // assign null to prev
+                              newNode->prev = NULL;
+                            
+                              // previous of head (now head is the second node) is newNode
+                              if ((*head) != NULL)
+                                (*head)->prev = newNode;
+                            
+                              // head points to newNode
+                              (*head) = newNode;
+                            }
+                            
+                            // insert a node after a specific node
+                            void insertAfter(struct Node* prev_node, int data) {
+                              // check if previous node is null
+                              if (prev_node == NULL) {
+                                printf("previous node cannot be null");
+                                return;
+                              }
+                            
+                              // allocate memory for newNode
+                              struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+                            
+                              // assign data to newNode
+                              newNode->data = data;
+                            
+                              // set next of newNode to next of prev node
+                              newNode->next = prev_node->next;
+                            
+                              // set next of prev node to newNode
+                              prev_node->next = newNode;
+                            
+                              // set prev of newNode to the previous node
+                              newNode->prev = prev_node;
+                            
+                              // set prev of newNode's next to newNode
+                              if (newNode->next != NULL)
+                                newNode->next->prev = newNode;
+                            }
+                            
+                            // insert a newNode at the end of the list
+                            void insertEnd(struct Node** head, int data) {
+                              // allocate memory for node
+                              struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+                            
+                              // assign data to newNode
+                              newNode->data = data;
+                            
+                              // assign null to next of newNode
+                              newNode->next = NULL;
+                            
+                              // store the head node temporarily (for later use)
+                              struct Node* temp = *head;
+                            
+                              // if the linked list is empty, make the newNode as head node
+                              if (*head == NULL) {
+                                newNode->prev = NULL;
+                                *head = newNode;
+                                return;
+                              }
+                            
+                              // if the linked list is not empty, traverse to the end of the linked list
+                              while (temp->next != NULL)
+                                temp = temp->next;
+                            
+                              // now, the last node of the linked list is temp
+                            
+                              // assign next of the last node (temp) to newNode
+                              temp->next = newNode;
+                            
+                              // assign prev of newNode to temp
+                              newNode->prev = temp;
+                            }
+                            
+                            // delete a node from the doubly linked list
+                            void deleteNode(struct Node** head, struct Node* del_node) {
+                              
+                              if (*head == NULL || del_node == NULL)
+                                return;
+                            
+                              
+                              if (*head == del_node)
+                                *head = del_node->next;
+                            
+                              
+                              if (del_node->next != NULL)
+                                del_node->next->prev = del_node->prev;
+                            
+                              
+                              if (del_node->prev != NULL)
+                                del_node->prev->next = del_node->next;
+                            
+                              // free the memory of del_node
+                              free(del_node);
+                            }
+                            
+                            // print the doubly linked list
+                            void displayList(struct Node* node) {
+                              struct Node* last;
+                            
+                              while (node != NULL) {
+                                printf("%d->", node->data);
+                                last = node;
+                                node = node->next;
+                              }
+                              if (node == NULL)
+                                printf("NULL\n");
+                            }
+                            
+                            int main() {
+                              // initialize an empty node
+                              struct Node* head = NULL;
+                            
+                              insertEnd(&head, 5);
+                              insertFront(&head, 1);
+                              insertFront(&head, 6);
+                              insertEnd(&head, 9);
+                            
+                              // insert 11 after head
+                              insertAfter(head, 11);
+                            
+                              // insert 15 after the seond node
+                              insertAfter(head->next, 15);
+                            
+                              displayList(head);
+                            
+                              // delete the last node
+                              deleteNode(&head, head->next->next->next->next->next);
+                            
+                              displayList(head);
+                            }
+          
+                     </pre>
+                    
+                     <br>
+                     <hr>
+                     <br>
+                     <li><strong>Implementation of Circular Linked List</strong></li>
+                     <pre >
+                        
+                        #include&lt;stdio.h&gt;
+                        #include&lt;stdlib.h&gt;
+                        
+                        // Structure of a linked list node
+                        struct node {
+                            int info;
+                            struct node* next;
+                        };
+                        
+                        // Pointer to last node in the list
+                        struct node* last = NULL;
+                        
+                        // Function to insert a node in the
+                        // starting of the list
+                        void insertAtFront(int data)
+                        {
+                            // Initialize a new node
+                            struct node* temp;
+                            temp = (struct node*)malloc(sizeof(struct node));
+                        
+                            // If the new node is the only
+                            // node in the list
+                            if (last == NULL) {
+                                temp->info = data;
+                                temp->next = temp;
+                                last = temp;
+                            }
+                        
+                            // Else last node contains the
+                            // reference of the new node and
+                            // new node contains the reference
+                            // of the previous first node
+                            else {
+                                temp->info = data;
+                                temp->next = last->next;
+                        
+                                // last node now has reference
+                                // of the new node temp
+                                last->next = temp;
+                            }
+                        }
+                        
+                        // Function to print the list
+                        void viewList()
+                        {
+                            // If list is empty
+                            if (last == NULL)
+                                printf("\nList is empty\n");
+                        
+                            // Else print the list
+                            else {
+                                struct node* temp;
+                                temp = last->next;
+                        
+                                // While first node is not
+                                // reached again, print,
+                                // since the list is circular
+                                do {
+                                    printf("\nData = %d", temp->info);
+                                    temp = temp->next;
+                                } while (temp != last->next);
+                            }
+                        }
+                        
+                        // Driver Code
+                        int main()
+                        {
+                            // Function Call
+                            insertAtFront(10);
+                            insertAtFront(20);
+                            insertAtFront(30);
+                        
+                            // Print list
+                            viewList();
+                        
+                            return 0;
+                        }
+                        
+          
+                     </pre>
+
+
+               </ul>
+
+           
+           
+        </div>
+    </section>
+    <br><br><br>
+    <section id="lastitems">
+        <div class="container-fluid cont last">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand cont1" href="">
+                    Read Also |</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="DS.html">Data
+                                Structure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="Array.html">Arrays</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Linked Lists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stack.html">Stack</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Queue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Trees</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+</body>
+
+</html>
