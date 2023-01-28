@@ -4,7 +4,7 @@
 	"start_url": ".",
 	"display": "standalone",
 	"background_color": "#fff",
-	"description": "A news app.",
+	"description": "A learning app.",
 	"icons": [
 	  {
 		"src": "x.ico",
